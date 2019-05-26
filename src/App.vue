@@ -1,13 +1,19 @@
 <template>
   <div id="app">
-    <router-view/>
+    <!-- <router-view/> -->
+    <hello></hello>
   </div>
 </template>
 
 <script>
+import HelloWorld from '@/components/restAPI'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'hello' : HelloWorld
+  }
 }
+
 </script>
 
 <style>
