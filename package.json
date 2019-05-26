@@ -13,7 +13,7 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
     "predeploy": "npm run build",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "shaka-player": "^2.5.1",
